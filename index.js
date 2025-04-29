@@ -32,4 +32,3 @@ submitButton.addEventListener("click", () => {
     console.log(i2of5);
   }
 });
-//test upc 72716589453634
