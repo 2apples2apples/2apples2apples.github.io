@@ -7,6 +7,9 @@ submitButton.addEventListener("click", () => {
   const packSizeValue = packSize.value;
   if (inputValue.length < 12 || inputValue.length > 12) {
     console.log("Not a valid format");
+    const result = document.querySelector(".result")
+    result.innerHTML = "Not a valid format"
+
   } else {
     const initUpc = inputValue.split("");
     const upc = initUpc.map(Number);
@@ -30,5 +33,8 @@ submitButton.addEventListener("click", () => {
     console.log(stepFour);
     console.log(upc);
     console.log(i2of5);
+    const result = document.querySelector(".result")
+    result.innerHTML = `i2of5: ${i2of5}`
   }
+
 });

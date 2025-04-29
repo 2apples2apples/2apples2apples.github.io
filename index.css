@@ -1,0 +1,22 @@
+.master-pack-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+header {
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#upcInput {
+	height: 20px;
+}
+
+#submitButton {
+	height: 26px;
+}
