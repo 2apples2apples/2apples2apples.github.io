@@ -22,7 +22,7 @@ submitButton.addEventListener("click", () => {
     const stepTwo = stepOne * 3;
     const stepThree = upc[1] + upc[3] + upc[5] + upc[7] + upc[9] + upc[11];
     const stepFour = stepTwo + stepThree;
-    const lastDigit = 10 - (stepFour % 10);
+    const lastDigit = (10 - (stepFour % 10)) % 10
     upc.splice(13, 1, Number(lastDigit));
     const i2of5 = Number(upc.join(""));
     console.log(lastDigit);
